@@ -14,7 +14,7 @@ class HomePage extends StatelessWidget {
             width: 200,
             height: 200,
           ),
-          SizedBox(height: 150),
+          const SizedBox(height: 150),
           Column(
             children: [
               Row(
@@ -32,10 +32,10 @@ class HomePage extends StatelessWidget {
                           ),
                         );
                       },
-                      child: Text('TERBARU'),
+                      child: const Text('TERBARU'),
                     ),
                   ),
-                  SizedBox(width: 10),
+                  const SizedBox(width: 10),
                   Container(
                     width: 150,
                     child: ElevatedButton(
@@ -48,12 +48,12 @@ class HomePage extends StatelessWidget {
                           ),
                         );
                       },
-                      child: Text('DAERAH'),
+                      child: const Text('DAERAH'),
                     ),
                   ),
                 ],
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -69,10 +69,10 @@ class HomePage extends StatelessWidget {
                           ),
                         );
                       },
-                      child: Text('INTERNASIONAL'),
+                      child: const Text('INTERNASIONAL'),
                     ),
                   ),
-                  SizedBox(width: 10),
+                  const SizedBox(width: 10),
                   Container(
                     width: 150,
                     child: ElevatedButton(
@@ -85,7 +85,7 @@ class HomePage extends StatelessWidget {
                           ),
                         );
                       },
-                      child: Text('ISLAM'),
+                      child: const Text('ISLAM'),
                     ),
                   ),
                 ],

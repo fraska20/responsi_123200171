@@ -11,7 +11,7 @@ class PageListDetailNews extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("News Detail"),
+        title: const Text("News Detail"),
         centerTitle: true,
       ),
       body: Padding(
@@ -23,10 +23,11 @@ class PageListDetailNews extends StatelessWidget {
               width: MediaQuery.of(context).size.width,
               child: Text(
                 post.title!,
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                style:
+                    const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Container(
@@ -34,7 +35,7 @@ class PageListDetailNews extends StatelessWidget {
               child: Text(convertPubDate(post.pubDate!),
                   style: TextStyle(fontSize: 12, fontWeight: FontWeight.w300)),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             FractionallySizedBox(
@@ -44,19 +45,19 @@ class PageListDetailNews extends StatelessWidget {
                 fit: BoxFit.cover,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Text(post.description!,
                 style: TextStyle(fontSize: 12, fontWeight: FontWeight.w300)),
-            SizedBox(
+            const SizedBox(
               height: 50,
             ),
             ElevatedButton(
               onPressed: () async {
                 await goToWebPage(post.link.toString());
               },
-              child: Text("Baca Selengkapnya..."),
+              child: const Text("Baca Selengkapnya..."),
             )
           ],
         ),

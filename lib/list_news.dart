@@ -64,10 +64,10 @@ Widget _buildItemsUsers(Posts news, context) {
           Flexible(
               child: Text(
             news.title!,
-            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+            style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
             maxLines: 2,
           )),
-          SizedBox(
+          const SizedBox(
             width: 10,
           ),
           Container(
